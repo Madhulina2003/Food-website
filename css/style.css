@@ -1,0 +1,386 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variable*/
+:root{
+    --navbar-height:20px;
+}
+/*Navigation Bar */
+#navbar
+{   position: absolute;
+    display: flex;
+    align-items: center;
+     top:0px;
+}
+/* Navigation Bar: logo and image*/
+#logo{
+    height: 90px;
+    margin: 12px  15px;
+
+}
+#logo img{
+    top:0;
+    left:0;
+    height:70px;
+    margin: 30px;
+    border-radius:100%;
+    aspect-ratio: 1;
+}    
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"" ;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: rgb(16, 2, 8);
+      display: block;
+      padding:3px 22px ;
+      border-radius:20px;
+      text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    
+    height: 800px;
+    display: flex;
+    flex-direction:column;
+    padding: 3px 20px;
+    justify-content: center;
+    align-items: center;
+    left:0px;
+    top:0px;
+}
+
+#home::before{ content:"" ;
+    background:url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+home h1{
+    color:black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5 rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Service Section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services.box{
+    display: flex;
+    border:2px solid red;
+    padding:30px;
+    margin:3px 6px;
+    border-radius: 23%;
+    background-color: rgb(99, 8, 8);
+}
+.madhu{
+    display: block;
+    height: 120px;
+    margin: auto;
+}
+#services.box p{
+    font-family: 'Bree Serif',serif;
+}
+#services{}
+#services{}
+#services{}
+/* Client Section */
+#client-section{
+    height: 20px;
+  
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('../bg2.jpg');
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    opacity: 0.4
+}
+.insta{
+height: 100px;
+width: 60px;
+ margin:auto;
+ display: block;
+}
+.skype{
+    height: 100px;
+width: 60px;
+ margin:auto;
+ display: block;
+}
+.facebook{height: 100px;
+    width: 60px;
+     margin:auto;
+     display: block;
+
+}
+#Client-item{
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    padding:2px;
+    margin:2px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 3px;
+
+}
+Clients{
+ 
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form-group{
+    height: 20px;
+    flex-direction: row;
+    display: flex;
+    top: 100px;
+}
+footer{
+    color: antiquewhite;
+    padding: 50px;
+    height: 50px;
+}
+
+   
+/* Utility Classes*/
+.h-primary{
+    font-size:11 rem ;
+    padding: 22px;
+    font-family: 'Bree Serif',serif;
+}
+.h-secondary{
+    font-size: 30px;
+    height: 140px;
+    font-family: 'Bree Serif',serif;
+}
+  
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: rgb(213, 207, 218);
+    color:rgb(25, 1, 1);
+    margin: 17px;
+    font-size:2.5 rem;
+    border-radius: 10px;
+    cursor: pointer;
+}  
+
+.center{
+    text-align: center;
+}
+
+#contact{
+    font-size: larger;
+    height: 500px;
+    display: flex;
+    flex-direction:column;
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact::before{
+
+    content: "";
+    display: flex;
+     position: absolute;
+     padding: 20px;
+    margin: 70px 80px;
+    width:100%;
+    height: 15%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url('../contact.jpg')no-repeat center center/cover;
+    background-position: auto;
+}
+
+footer{
+    background:black;
+    color: white;
+    padding: 2px 3px;
+
+}
+input[type=text] {
+    padding:10px;
+     border-radius:10px;
+     width: 30rem;
+     background-color: lightcyan;
+     color: #2F4F4F;
+     font-family:cursive;
+    border :2px solid violet
+      
+   
+    
+  }  input[type=email] {
+    padding:10px;
+    
+    width: 30em;
+    background-color: lightcyan;
+    color: #2F4F4F;
+  
+  } 
+  
+  
+  @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cta {
+      display: flex;
+      padding: 10px 45px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px;
+      color: white;
+      background: #6225E6;
+      transition: 1s;
+      box-shadow: 6px 6px 0 black;
+      transform: skewX(-15deg);
+  }
+  
+  .cta:focus {
+     outline: none; 
+  }
+  
+  .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 #FBC638;
+  }
+  
+  .cta span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 0px;
+  }
+  
+  .cta:hover  span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 45px;
+  }
+  
+    span {
+      transform: skewX(15deg) 
+    }
+  
+    span:nth-child(2) {
+      width: 20px;
+      margin-left: 30px;
+      position: relative;
+      top: 12%;
+    }
+  
+  button{
+    border:0;
+    backgorund-color:white;
+    margin:10px
+  }
+    
+  /*****SVG*****/
+  
+  path.one {
+      transition: 0.4s;
+      transform: translateX(-60%);
+  }
+  
+  path.two {
+      transition: 0.5s;
+      transform: translateX(-30%);
+  }
+  
+  .cta:hover path.three {
+      animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover path.one {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover path.two {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.4s;
+  }
+  
+  /* SVG animations */
+  
+  @keyframes color_anim {
+      0% {
+          fill: white;
+      }
+      50% {
+          fill: #FBC638;
+      }
+      100% {
+          fill: white;
+      }
+  }
+  .form{
+    padding:3px;
+   
+    
+    
+   
+  }
+  
+  
+  
+  h1{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:100
+  }
+  @keyframes example {
+    0%   {color: MistyRose;}
+    25%  {color: LightCyan;}
+    50%  { color:DimGray;}
+    100% {color:green;}
+  }
+  .pop{
+
+    padding:5em;
+    margin-top:40px;
+  
+  }
